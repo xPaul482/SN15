@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<style>
+body {
+    background-color: white;
+    color: black;
+}
+a {
+    color:black;
+}
+.dark-mode a {
+  color: whitesmoke;
+}
+
+.dark-mode {
+  background-color: rgba(0, 0, 0, 0.966);
+  color: white;
+}
+.dark-mode .button{
+  background-color: white;
+  color: black;
+}
+.button {
+  position: relative;
+  background-color: black;
+  border: none;
+  font-size: 15px;
+  color: #FFFFFF;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.9s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+img {
+    display: block;
+    margin-left: 7%;
+}
+iframe {
+    display: block;
+    margin-left: 7%;
+}
+h2 {
+    font-size: 25px;
+}
+h3 {
+    font-size: 25px;
+}
+</style>
+</head>
+<body>
+
+<h1>Bilder / Videos</h1>
+
+<button class="button" onclick="myFunction()">Dark / White</button>
+
+<script>
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
+</script>
+
+
+<p>- Komplettes Video zum Flug</p>
+
+<iframe width="1131" height="636" src="https://www.youtube.com/embed/z9eoubnO-pE" 
+title="SN15 Rocket Launch" 
+frameborder="none"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen>
+</iframe>
+
+<p>- Gelände Aufnahme</p>
+
+<img width="1136" height="auto" src="https://cdn.shopify.com/s/files/1/0173/8204/7844/articles/PicsArt_04-08-02.13.14_2000x.jpg?v=1617909207" 
+title="SN15 Gelände">
+</img>
+
+<p>- Antrieb der Rakete</p>
+
+<img width="1136" height="auto" src="http://www.raumfahrer.net/news/images/20210504StarshipSN15Triebwerkssektion.jpg" 
+title="SN15 Antrieb">
+</img>
+
+<h3><a href="weiterseite.html" style="text-decoration: none;">]>Infos</a></h3>
+
+<h2><a href="index.html" style="text-decoration: none;">]>Go Back</a></h2>
+
+</body>
+</html>
